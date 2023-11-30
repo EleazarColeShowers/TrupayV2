@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".BaseApplication"
+        android:theme="@style/Theme.ComposeCourseYT"
+        android:networkSecurityConfig="@xml/networksecurityconfig"
+        android:enableOnBackInvokedCallback="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.otherflows.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ComposeCourseYT">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.otherflows.MenuActivity"/>
+        <activity android:name=".ui.PurchaseActivity"/>
+        <activity android:name=".ui.PaymentActivity" />
+        <activity android:name=".ui.cardotherflow.cashdeposit.InsertCardActivity" />
+        <activity android:name=".ui.cardotherflow.cashdeposit.AccountTypeActivity" />
+        <activity android:name=".ui.cashflow.CashActivity" />
+        <activity android:name=".ui.airtimeflow.AirtimeCardorCash"/>
+        <activity android:name=".ui.dataflow.DataCardorCash"/>
+        <activity android:name=".ui.otherflows.EnterPinActivity" />
+        <activity android:name=".ui.otherflows.PrintActivity" />
+        <activity android:name=".ui.transferflow.TransferActivity" />
+        <activity android:name=".ui.cardotherflow.cashwithdraw.AccountTypeWithdrawalActivity" />
+        <activity android:name=".ui.cardotherflow.cashwithdraw.InsertCardWithdrawActivity" />
+        <activity android:name=".ui.cardpurchaseflow.AccountTypePurchaseActivity" />
+        <activity android:name=".ui.cardpurchaseflow.InsertCardPurchaseActivity" />
+        <activity android:name=".ui.cardotherflow.CardOtherActivity" />
+        <activity android:name=".ui.cardotherflow.balanceenquiry.AccountTypeBalanceEnquiryActivity" />
+        <activity android:name=".ui.cardotherflow.balanceenquiry.InsertCardBalanceEnquiryActivity"/>
+        <activity android:name=".ui.cardotherflow.cashrefund.CashRefundActivity"/>
+        <activity android:name=".ui.cardotherflow.cashrefund.InsertCardCashRefundActivity"/>
+        <activity android:name=".ui.cardotherflow.cashadvance.CashAdvanceActivity"/>
+        <activity android:name=".ui.cardotherflow.cashadvance.InsertCardCashAdvanceActivity"/>
+        <activity android:name=".ui.cardotherflow.cashback.CashBackActivity"/>
+        <activity android:name=".ui.cardotherflow.cashback.InsertCardCashBackActivity"/>
+        <activity android:name=".ui.cashflow.CustomerPrintActivity"/>
+        <activity android:name=".ui.cardotherflow.reversaltransfer.TransactionHistoryActivity"/>
+        <activity android:name=".ui.otherflows.CustomerOtherReceipt"/>
+        <activity android:name=".ui.otherflows.MerchantOtherReceipt"/>
+        <activity android:name=".ui.transferflow.TransferViaCashActivity"/>
+        <activity android:name=".ui.cardotherflow.preauth.PreAuthActivity"/>
+        <activity android:name=".ui.cardotherflow.preauth.InsertCardPreAuthActivity"/>
+        <activity android:name=".ui.cardotherflow.salescompletion.SalesCompletionActivity"/>
+        <activity android:name=".ui.cardotherflow.salescompletion.SalesCompletionReceiptActivity"/>
+        <activity android:name=".ui.cardotherflow.airtimeanddata.card.CardAirtimeOrDataActivity"/>
+        <activity android:name=".ui.cardotherflow.airtimeanddata.cash.CashAirtimeOrDataActivity"/>
+        <activity android:name=".ui.airtimeflow.airtimecard.CardAirtimeNetworkProviderActivity"/>
+        <activity android:name=".ui.airtimeflow.airtimecard.InsertCardAirtimeActivity"/>
+        <activity android:name=".ui.airtimeflow.airtimecard.EnterPinAirtimeCardReceipt"/>
+        <activity android:name=".ui.airtimeflow.airtimecard.AirtimeCardReceipt"/>
+        <activity android:name=".ui.airtimeflow.airtimecashh.CashAirtimeNetworkProviderActivity"/>
+        <activity android:name=".ui.airtimeflow.airtimecashh.CashAirtimeReceiptActivity"/>
+        <activity android:name=".ui.dataflow.datacard.CardDataNetworkProviderActivity"/>
+        <activity android:name=".ui.dataflow.datacard.InsertCardDataActivity"/>
+        <activity android:name=".ui.dataflow.datacard.EnterPinDataCardActivity"/>
+        <activity android:name=".ui.dataflow.datacard.DataCardReceipt"/>
+        <activity android:name=".ui.dataflow.datacash.CashDataNetworkProviderActivity"/>
+        <activity android:name=".ui.dataflow.datacash.DataCashReceipt"/>
+        <activity android:name=".ui.transferflow.TransferMerchantReceipt"/>
+        <activity android:name=".ui.cashflow.MerchantCashReceiptActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.BillsPaymentActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.bettingandlottery.BettingActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.bettingandlottery.CredentialsActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.bettingandlottery.BettingReceiptActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.bettingandlottery.BettingMerchantReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.cabletv.CableTvActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.cabletv.CableTvReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.cabletv.CableTvMerchantReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.electricity.ElectricityActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.electricity.CardDetailsActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.electricity.ElectricityReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.electricity.ElectricityMerchantReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.education.EducationActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.education.DetailsActivity"/>
+        <activity android:name=".ui.cardotherflow.billspayment.education.EducationReceipt"/>
+        <activity android:name=".ui.cardotherflow.billspayment.education.EducationMerchantReceipt"/>
+        <activity android:name=".ui.otherflows.EODActivity"/>
+        <activity android:name=".ui.cardotherflow.micropayment.MicroPayment"/>
+        <activity android:name=".ui.cardotherflow.micropayment.micropension.MicroPension"/>
+    </application>
+</manifest>
